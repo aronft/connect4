@@ -1,18 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import checkIcon from '@/assets/icon-check.svg'
+import { Card } from '@/features/core/components/ui/molecules/card'
 
 export default function RulesPage() {
     return (
         <main className=" mx-0 flex h-dvh items-center justify-center">
-            <section className=" border-3 shadow-4xl relative  flex max-w-xl   flex-col items-start justify-between rounded-3xl border-black bg-white px-7 py-10  pb-14 font-bold">
+            <Card
+                as="section"
+                className="relative flex max-w-xl flex-col items-start   justify-between border-black bg-white px-7 py-10 pb-14  font-bold"
+            >
                 <h1 className="mb-10 w-full text-center text-5xl font-bold uppercase ">
                     Rules
                 </h1>
                 <h2 className="mb-5 text-lg uppercase text-purple-600">
                     Objetive
                 </h2>
-                <p className="text-gray-400  mb-5">
+                <p className="mb-5  text-gray-400">
                     Be the first player to connect 4 of the same colored discs
                     in a row (either vertically, horizontally, or diagonally).
                 </p>
@@ -20,7 +24,7 @@ export default function RulesPage() {
                 <h2 className="mb-5 text-lg uppercase text-purple-600">
                     HOW TO PLAY
                 </h2>
-                <ol className="text-gray-400 flex list-decimal flex-col gap-3 pl-5">
+                <ol className="flex list-decimal flex-col gap-3 pl-5 text-gray-400">
                     <li>Red goes first in the first game.</li>
                     <li>
                         Players must alternate turns, and only one disc can be
@@ -47,7 +51,7 @@ export default function RulesPage() {
                         alt="check icon"
                     />
                 </Link>
-            </section>
+            </Card>
         </main>
     )
 }
