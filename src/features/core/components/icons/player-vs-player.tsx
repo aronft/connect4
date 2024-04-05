@@ -13,9 +13,9 @@ export const PlayerVsPlayer = (props: PlayerVsPlayerProps) => {
             <g
                 id="Designs"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
             >
                 <g id="player-vs-player">
                     <circle
@@ -36,7 +36,7 @@ export const PlayerVsPlayer = (props: PlayerVsPlayerProps) => {
                         id="Group-8"
                         transform="translate(52.333333, 14.666667)"
                         stroke="#000000"
-                        stroke-width="3"
+                        strokeWidth="3"
                     >
                         <path
                             d="M5,22.2916667 C10.5228475,22.2916667 15,17.8145142 15,12.2916667 C15,6.76881917 10.5228475,2.29166667 5,2.29166667"
@@ -82,7 +82,7 @@ export const PlayerVsPlayer = (props: PlayerVsPlayerProps) => {
                             id="Group-8"
                             transform="translate(13.333333, 11.666667)"
                             stroke="#000000"
-                            stroke-width="3"
+                            strokeWidth="3"
                         >
                             <path
                                 d="M5,22.2916667 C10.5228475,22.2916667 15,17.8145142 15,12.2916667 C15,6.76881917 10.5228475,2.29166667 5,2.29166667"

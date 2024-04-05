@@ -13,9 +13,9 @@ export const PlayerVsCPU = (props: PlayerVsCPUProps) => {
             <g
                 id="Designs"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
             >
                 <g id="player-vs-cpu">
                     <circle
@@ -37,7 +37,7 @@ export const PlayerVsCPU = (props: PlayerVsCPUProps) => {
                             id="Group-8"
                             transform="translate(10.000000, 12.500000)"
                             stroke="#FFFFFF"
-                            stroke-width="3"
+                            strokeWidth="3"
                         >
                             <g id="Group-10">
                                 <line
@@ -83,7 +83,7 @@ export const PlayerVsCPU = (props: PlayerVsCPUProps) => {
                             id="Group-8"
                             transform="translate(10.000000, 11.666667)"
                             stroke="#FFFFFF"
-                            stroke-width="3"
+                            strokeWidth="3"
                         >
                             <path
                                 d="M5,22.2916667 C10.5228475,22.2916667 15,17.8145142 15,12.2916667 C15,6.76881917 10.5228475,2.29166667 5,2.29166667"
