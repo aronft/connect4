@@ -4,7 +4,7 @@ const colors = require('tailwindcss/colors')
 const config: Config = {
     content: [
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-        './src/features/core/components/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/features/**/components/**/*.{js,ts,jsx,tsx,mdx}',
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
@@ -12,6 +12,9 @@ const config: Config = {
             boxShadow: {
                 '3xl': '0 5px 0 0 rgba(0, 0, 0, 1)',
                 '4xl': '0 10px 0 0 rgba(0, 0, 0, 1)',
+            },
+            borderWidth: {
+                '3': '3px',
             },
         },
         colors: {
