@@ -10,7 +10,7 @@ interface CardProps {
 }
 
 const impactClasses: Record<Sizes, string> = {
-    small: 'shadow-3xl rounded-xl   border-2 px-4 py-2',
+    small: 'shadow-3xl  rounded-2xl   border-3 px-4 py-2',
     medium: 'shadow-4xl rounded-3xl border-4 ',
 }
 
@@ -25,7 +25,11 @@ export const Card = ({
     return (
         <Component
             {...props}
-            className={cn('border-black', impactClasses[size], className)}
+            className={cn(
+                'rounded-3xl border-black',
+                impactClasses[size],
+                className
+            )}
         >
             {children}
         </Component>
