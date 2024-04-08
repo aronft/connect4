@@ -1,4 +1,4 @@
-import { Card } from '../ui/molecules/card'
+import { Card } from '@/features/core/components/ui/molecules/card'
 
 export const Menu = () => {
     return (
