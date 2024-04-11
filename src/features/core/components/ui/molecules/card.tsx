@@ -1,10 +1,9 @@
 import { cn } from '@/features/core/utils/class-names'
+import { HTMLAttributes } from 'react'
 
 type Sizes = 'small' | 'medium'
 
-interface CardProps {
-    className?: string
-    children: React.ReactNode
+interface CardProps extends HTMLAttributes<{}> {
     as?: keyof React.ReactHTML
     size?: Sizes
 }
