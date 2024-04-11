@@ -1,12 +1,20 @@
+import { cn } from '../../utils/class-names'
 import { Logo } from '../logo'
 import { Button } from '../ui/atoms/button'
 import { Container } from '../ui/objects/container'
 
-export const Header = () => {
+interface HeaderProps {
+    className?: string
+}
+
+export const Header = ({ className }: HeaderProps) => {
     return (
         <Container
             as="header"
-            className="flex w-full items-center justify-between gap-2"
+            className={cn(
+                'flex w-full items-center justify-between gap-2',
+                className
+            )}
         >
             <Button>menu</Button>
             <Logo className="w-10" />
