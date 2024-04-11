@@ -29,9 +29,7 @@ export const PlayerCard = ({
     return (
         <Card
             className={cn(
-                'relative flex flex-row  items-center justify-between gap-3 bg-white px-12 py-4 lg:mt-5 lg:flex-col lg:px-5 lg:pb-7 lg:pt-11',
-                { 'ml-5': avatarPosition === 'left' },
-                { 'mr-5': avatarPosition === 'right' },
+                'relative flex min-w-36  flex-row items-center justify-between gap-3 bg-white px-12 py-4 lg:flex-col lg:px-5 lg:pb-7 lg:pt-11',
                 className
             )}
         >
