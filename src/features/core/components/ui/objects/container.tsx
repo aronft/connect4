@@ -13,10 +13,7 @@ export const Container = ({
 }: ContainerProps) => {
     const Component = as ?? 'div'
     return (
-        <Component
-            className={cn('mx-auto max-w-2xl px-2', className)}
-            {...props}
-        >
+        <Component className={cn('mx-auto max-w-2xl', className)} {...props}>
             {children}
         </Component>
     )
