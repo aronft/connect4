@@ -1,6 +1,7 @@
 import { Header } from '@/features/core/components/common/header'
 import { Container } from '@/features/core/components/ui/objects/container'
 import { Board } from '@/features/game/components/board'
+import { TurnCard } from '@/features/game/components/turn-card'
 import { WinnerMessage } from '@/features/game/components/winner-message'
 import { PlayerCard } from '@/features/player/components/player-card'
 
@@ -27,7 +28,13 @@ export default function GamePage() {
                     className="w-full lg:col-start-3 lg:row-start-2"
                 />
                 <div className="col-span-2 flex  max-w-2xl flex-col items-center lg:col-span-1  lg:col-start-2 lg:row-start-2 lg:mx-auto lg:w-full">
-                    <Board />
+                    <Board className="relative">
+                        <TurnCard
+                            playerName="Cpu"
+                            className="position absolute left-1/2 top-full -mt-[10vw] w-max -translate-x-1/2 pt-7 md:-mt-8 md:min-h-[20vw] md:min-w-[25vw] lg:-mt-12 lg:min-h-[170px] lg:min-w-[200px]"
+                            time={30}
+                        />
+                    </Board>
                 </div>
             </Container>
         </div>
